@@ -1,20 +1,73 @@
-# wd-1-scraping-exercise
+# Intro to Python recap exercise
 
-## Naloga
+**Important**: this project is for educational purpose only. Any missuse or comercial use is forbiden.
+**NOTE:** The docs assume that you use Pycharm as your editor/IDE of choice. 
 
-1. Pojdite na spletno stran Bolha.com in s pomočjo inspektorja poglejte od kod dobi spletna stran podatke za artikle
+What we will build:
 
-2. Inštalirajte `requests` in poskusite s Pythonom poustvarit requeste, da dobite rezultate za iskalni niz.
-Opomba: rezultati bodo v obliki JSON, zato uporabite `requests` metodo `json`
 
-3. Shranite rezultate v CSV
+We will use some battletested 3rd party libraries: 
 
-4. Inptalirajte paket `click` in ustvarite cli (command line interface), ki bo sprejel naslednje ukaze:
-- search [article]: pridobi, shrani (vse) in prikaži zadnjih 10 novih artiklov za nek iskalni niz
-- show [article]: pokaži vse shranjenen zadetke za nek iskalni niz
-- show --list: pokaži vse shranjenen iskalne nize
-- remove [article]: odstrani iskanje za artikel
+* [requests](https://pypi.org/project/requests/) 
+  Making HTTP requests from our code
+* [click](https://pypi.org/project/click/7.1.2/)
+  For parsing (getting) comands and arguments from the command line
+* [rich](https://pypi.org/project/rich/) 
+  Formating the output to stdout (command line or shell)
+* [black](https://pypi.org/project/rich/)
+  Auto-code formater for Python
+* [pytests](https://pypi.org/project/pytest/)
+  Writing and runing tests
+  
+## Project setup
 
-5. (bonus) naredi cronjob, da se bo program samodjeno izvajala vsakih 6 ur
+The url of the project is https://github.com/dasdachs/wd-1-scraping-exercise.git
 
-NOTE: Naloga je samo za potrebe učenja. Vsaka drugačna uporaba je na lastno odgovornost.
+### Via Pycharm
+(from the official [docs](https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#))
+
+* From the main menu, choose **VCS | Get from Version Control.**
+* In the Get from Version Control dialog, choose **GitHub** on the left.
+* Specify the **URL** of the repository that you want to clone. You can select a repository from the list of all GitHub projects associated with your account and the organization that your account belongs to
+* In the Directory field, **enter the path to the folder** where your local Git repository will be created.
+* **Click Clone.** If you want to create a project based on these sources, click Yes in the confirmation dialog. PyCharm will automatically set Git root mapping to the project root directory. 
+
+### Via command line
+
+```bash
+git clone https://github.com/dasdachs/wd-1-scraping-exercise.git
+cd wd-1-scraping-exercise
+python -m venv venv
+pip install -r requirements.txt
+# OS specific command
+venv\Scripts\activate.bat # Windows
+venv/source/activate      # MacOS or Linux
+```
+
+## Exercise
+
+## Formating
+
+*Black* is used to ensure code style consistency. 
+
+You can run *black* from the command line
+
+```bash
+black -v .
+```
+
+Or integrate it with *Pycharm* using this [steps](https://black.readthedocs.io/en/stable/editor_integration.html#pycharm-intellij-idea).
+
+## Tests
+
+When you are done with a task run the test suite.
+
+```bash
+pytest -v
+```
+
+Or use *Pycharm*
+
+## Misc
+
+Contact the author for bugs etc.
