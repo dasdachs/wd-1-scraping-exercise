@@ -1,25 +1,29 @@
 # Intro to Python recap exercise
 
-**Important**: this project is for educational purpose only. Any missuse or comercial use is forbiden.
-**NOTE:** The docs assume that you use Pycharm as your editor/IDE of choice. 
+**Important**: this project is for educational purpose only. Any missuses or commercial use is forbidden.
 
-What we will build:
+**NOTE:** 
+1. The docs assume that you use Pycharm as your editor/IDE of choice. 
+2. The repository uses type hints. Type hints are optional and not needed. You can ignore them,
+they are there to give you a hint of the functions and for better IDE support.
+
+What we will build: a cli application to scrape, store and update search items.
 
 
-We will use some battletested 3rd party libraries: 
+We will use some battle tested 3rd party libraries: 
 
 * [requests](https://pypi.org/project/requests/) 
   Making HTTP requests from our code
 * [beautifulsoup](https://pypi.org/project/beautifulsoup4/) 
-  Making HTTP requests from our code
+  Parsing HTML files
 * [click](https://pypi.org/project/click/7.1.2/)
-  For parsing (getting) comands and arguments from the command line
+  For parsing (getting) commands and arguments from the command line
 * [rich](https://pypi.org/project/rich/) 
-  Formating the output to stdout (command line or shell)
+  Formatting the output to stdout (command line or shell)
 * [black](https://pypi.org/project/rich/)
-  Auto-code formater for Python
+  Auto-code formatter for Python
 * [pytests](https://pypi.org/project/pytest/)
-  Writing and runing tests
+  Writing and running tests
   
 ## Project setup
 
@@ -58,7 +62,7 @@ Once setup, this are the tasks
    - (BONUS) do the same analysis for multiple results aka. pagination
    - (BONUS) do the same analysis for filters, e.g. newest first
    
-   Write the answers to a pices of paper or a text file.
+   Write the answers to paper or a text file.
 
 2. Open `src/scaper.py` and finish the functions
 
@@ -68,7 +72,7 @@ Once setup, this are the tasks
 
 What's next? Expand cli arguments, add more data etc.
 
-## Formating
+## Formatting
 
 *Black* is used to ensure code style consistency. 
 
