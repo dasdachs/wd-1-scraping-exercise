@@ -1,3 +1,5 @@
+from typing import List
+
 from .utils import price_string_to_number
 
 
@@ -15,3 +17,7 @@ class SearchItem(object):
             return f'{self._price} €'
 
         return "No price"
+
+    def parse_to_list(self) -> List[str]:
+        # Return all the data for to save to csv
+        raise NotImplemented
