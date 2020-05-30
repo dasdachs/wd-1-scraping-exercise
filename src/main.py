@@ -10,10 +10,11 @@ __all__ = ["execute_search", "save_to_csv"]
 
 DATA_PATH = "data"
 
+
 def execute_search(search_text: str) -> List[SearchItem]:
     raise NotImplemented
 
 
-def save_to_csv(results: List[SearchItem) -> None
+def save_to_csv(results: List[SearchItem]) -> None:
     # Save models to a csv file
     raise NotImplemented

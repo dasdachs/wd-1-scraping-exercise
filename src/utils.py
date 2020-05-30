@@ -1,5 +1,4 @@
 from typing import List
-form
 
 
 def price_string_to_number(price_string: str) -> int:
