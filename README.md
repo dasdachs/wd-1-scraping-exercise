@@ -10,6 +10,8 @@ We will use some battletested 3rd party libraries:
 
 * [requests](https://pypi.org/project/requests/) 
   Making HTTP requests from our code
+* [beautifulsoup](https://pypi.org/project/beautifulsoup4/) 
+  Making HTTP requests from our code
 * [click](https://pypi.org/project/click/7.1.2/)
   For parsing (getting) comands and arguments from the command line
 * [rich](https://pypi.org/project/rich/) 
@@ -45,6 +47,26 @@ venv/source/activate      # MacOS or Linux
 ```
 
 ## Exercise
+
+Once setup, this are the tasks
+
+1. Go to [bolha.com](https://www.bolha.com/) and do some searches with the browsers development tools open.
+   Now answer the following questions:
+   - what (changes) happens when you do a search 
+   - where in the browser markup are the items
+   - what are the properties of the items (think title, url, price etc.)
+   - (BONUS) do the same analysis for multiple results aka. pagination
+   - (BONUS) do the same analysis for filters, e.g. newest first
+   
+   Write the answers to a pices of paper or a text file.
+
+2. Open `src/scaper.py` and finish the functions
+
+3. Open `src/models.py` and finish the class
+
+4. Open `cli.py` and finish the functions
+
+What's next? Expand cli arguments, add more data etc.
 
 ## Formating
 
